@@ -1,6 +1,6 @@
-pip3 install pyspark
-pip3 install findspark
-pip3 install seaborn
-pip3 install pandas
-pip3 install matplotlib
-pip3 install py4j
+seaborn==0.11.0
+pyspark==3.0.1
+py4j==0.10.9
+pandas==1.0.3
+matplotlib==3.1.1
+findspark==1.4.2
