@@ -1,0 +1,6 @@
+pip3 install pyspark
+pip3 install findspark
+pip3 install seaborn
+pip3 install pandas
+pip3 install matplotlib
+pip3 install py4j
