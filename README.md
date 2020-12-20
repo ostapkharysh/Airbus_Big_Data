@@ -24,15 +24,21 @@ here are all the dependencies needed for the project
 import os
 os.environ["JAVA_HOME"] = "/usr/lib/jvm/java-8-openjdk-amd64"
 os.environ["SPARK_HOME"] = "/installation_folder/spark-2.4.7-bin-hadoop2.7"
-
-!pip3 install pyspark
 ```
+
 
 
 - **Clone this repo**:
 ```bash
 git clone https://github.com/LorenzoFramba/Flight_Delay_Prediction.git
 cd Flight_Delay_Prediction
+```
+
+**Install dependencies**:
+Let's finish with running the setup.py function, to download any uninstalled library
+
+```bash
+python3 setup.py install
 ```
 
 
@@ -42,7 +48,7 @@ cd Flight_Delay_Prediction
 - Select the *--path* at which the Airbus dataset is saved. If *--path* is not specified, the program assumes the Airbus is in the same folder as the project itselves. Make sure the name is 'year.csv' and *year* is a 4 digit number from 1987 to 2008. 
 
 ```bash
-python main.py --dataset 'year.csv' 
+python3 main.py --dataset 'year.csv' 
 ```
 
 
@@ -54,7 +60,7 @@ you also the ML model type  between *'linear_regression', 'gradient_boosted_tree
 The *all* option will train and test all the models, compare their respective R2 and select the best performing one.
 
 ```bash
-python main.py --dataset 'year.csv' --model 'linear_regression' --split_size_train 75 --dataset_size 100000
+python3 main.py --dataset 'year.csv' --model 'linear_regression' --split_size_train 75 --dataset_size 100000
 ```
 
 **Variable Selection**
@@ -71,7 +77,7 @@ By default, the model will run with the easier variable: X1. You have the option
 
 
 ```bash
-python main.py --dataset 'year.csv' --model 'all' --split_size_train 75 --variables 'best' --view True 
+python3 main.py --dataset 'year.csv' --model 'all' --split_size_train 75 --variables 'best' --view True 
 ```
 
 
