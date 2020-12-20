@@ -9,8 +9,8 @@ setup(
 	description='Prediction a flight delay with Spark',
 	license='MIT',
 	long_description=long_description,
-	author='Lorenzo Framba',
-
+	author='Lorenzo Framba, Ostap Kharysh, Federico Rodigari',
+	author_email='lorenzo.framba@alumnos.upm.es, ostap.kharysh@alumnos.upm.es, federico.rodigari@alumnos.upm.es',
 	install_requires=[
 		'seaborn==0.11.0',
 		'pyspark==3.0.1',
