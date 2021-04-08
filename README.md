@@ -1,6 +1,8 @@
 # Flight_Delay_Prediction
 A Big Data Assignment regarding Spark, with Airbus data fetched and linear regression model  
 
+The Full report could be found here: [REPORT](https://github.com/ostapkharysh/Flight_Big_Data/blob/main/Report.pdf)
+
 ## Getting Started
 
 ### Dependencies
